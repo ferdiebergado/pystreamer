@@ -1,0 +1,50 @@
+[
+  { "name": "Enigmatic Senses", "url": "http://radio.enigmatic.su:8170/radio" },
+  {
+    "name": "RelaxFM (New Age)",
+    "url": "http://live.kuznetsovsk.net:8000/relaxfm"
+  },
+  {
+    "name": "Radionetz DE (Chillout)",
+    "url": "http://s3.radionetz.de:80/1a-chillout_app.mp3"
+  },
+  {
+    "name": "soma.fm Lush (Sensuous and mellow vocals, mostly female, with an electronic influence)",
+    "url": "https://somafm.com/lush130.pls"
+  },
+
+  { "name": "Enigmatic Station 1", "url": "https://myradio24.org/8226" },
+  {
+    "name": "Enigmatic Sunshine",
+    "url": "http://radio.enigmatic.su:8120/radio"
+  },
+  {
+    "name": "Enigmatic 3 Magnetic Chillout",
+    "url": "http://radio.enigmatic.su:8050/radio"
+  },
+  { "name": "Enigmatic Drive", "url": "http://radio.enigmatic.su:8090/radio" },
+  {
+    "name": "Enigmatic Immersion",
+    "url": "http://radio.enigmatic.su:8040/radio"
+  },
+  {
+    "name": "AceRadio Alternative",
+    "url": "http://ais-edge25-fra01.cdnstream.com:80/1012_a0modernrock128k"
+  },
+  {
+    "name": "011.FM 90s Alternative",
+    "url": "https://listen.011fm.com/2660_192.mp3"
+  },
+  {
+    "name": "soma.fm Secret Agent (The soundtrack for your stylish, mysterious, dangerous life)",
+    "url": "https://somafm.com/secretagent130.pls"
+  },
+  {
+    "name": "soma.fm Beat Blender (A late night blend of deep-house and downtempo chill)",
+    "url": "https://somafm.com/beatblender130.pls"
+  },
+  {
+    "name": "90s Pinoy Alternative",
+    "url": "http://s1.voscast.com:11680/stream"
+  }
+]
