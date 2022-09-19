@@ -33,20 +33,6 @@ def notify(summary, body):
     )
 
 
-def stream(player, stations):
-
-    print("\nTuning in...\n")
-
-    station = random.choice(stations)
-    name = station["name"]
-    url = station["url"]
-
-    print(f"{name}\n{url}\n")
-
-    player.play(url)
-    player.wait_until_playing()
-
-
 def main():
     with open(DATA_FILE) as station_file:
 
@@ -59,10 +45,6 @@ def main():
         terminal=True,
         input_terminal=True,
     )
-
-    @player.on_key_press("ESC")
-    def esc_binding():
-        player.quit(0)
 
     @player.property_observer("metadata")
     def metadata_observer(_name, value):
@@ -77,9 +59,18 @@ def main():
 
                 print(f"\x1b]2;{title}\x07")
 
+    for station in stations:
+        player.playlist_append(station["url"])
+
+    print(player.playlist)
+
     while True:
 
-        stream(player, stations)
+        print("\nTuning in...\n")
+
+        player.playlist_pos = random.randint(0, len(stations) - 1)
+        player.wait_until_playing()
+
         time.sleep(DURATION)
 
 
