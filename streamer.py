@@ -3,9 +3,8 @@
 import mpv
 import dbus
 import json
-import random
-import time
 import os
+import time
 
 DURATION = 60 * 30  # 30 minutes
 APP_NAME = "streamer.py"
@@ -62,13 +61,12 @@ def main():
     for station in stations:
         player.playlist_append(station["url"])
 
-    print(player.playlist)
-
     while True:
 
         print("\nTuning in...\n")
 
-        player.playlist_pos = random.randint(0, len(stations) - 1)
+        player.playlist_shuffle()
+        player.playlist_pos = 0
         player.wait_until_playing()
 
         time.sleep(DURATION)
