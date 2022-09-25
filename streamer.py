@@ -61,15 +61,18 @@ def main():
     for station in stations:
         player.playlist_append(station["url"])
 
+    player.playlist_shuffle()
+
     while True:
 
-        print("\nTuning in...\n")
+        for i in range(len(player.playlist)):
 
-        player.playlist_shuffle()
-        player.playlist_pos = 0
-        player.wait_until_playing()
+            print("\nTuning in...\n")
 
-        time.sleep(DURATION)
+            player.playlist_pos = i
+            player.wait_until_playing()
+
+            time.sleep(DURATION)
 
 
 if __name__ == "__main__":
